@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/dist'),
         filename: './bundle.js',
-    },s
+    },
     module: {
         rules: [
             {
@@ -16,6 +16,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
+                exclude: /node_modules/,
                 use: [
                     // [style-loader](/loaders/style-loader)
                     { loader: 'style-loader' },
