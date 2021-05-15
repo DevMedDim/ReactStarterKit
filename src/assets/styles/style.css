@@ -1,8 +1,20 @@
 h1{
     font-size: 50px;
     color: blueviolet;
+<<<<<<< HEAD
     margin: 0;
 }
 * style{
 display: block;
 }   
+=======
+}
+*{
+    padding:0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x:hidden;
+    position: relative;
+    display: block;
+}
+>>>>>>> 5a935a5aae3465dfb4f1de125670502414374a4f
