@@ -3,9 +3,14 @@ import '/src/assets/styles/style.css';
 
 function Landing() {
     return (
-        <div>
-           <h1>react starter kit 🎉</h1>
+        <div className="landing__container">
+        <div className="title__landing">
+           <h1>React Starter Kit<span className="celeb"> 🎉</span></h1>
+           <br />
+           
         </div>
+        </div>
+        
     )
 }
 

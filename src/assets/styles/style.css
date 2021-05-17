@@ -1,11 +1,70 @@
-h1{
-    font-size: 50px;
-    color: blueviolet;
+.landing__container{
+    background-color: cadetblue;
+    height: 100vh;
 }
-*{
-    padding:0;
+.title__landing {
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    padding-top: 20%;
+
+    font-size: 50px;
+    color: burlywood;
     margin: 0;
-    max-width: 100%;
-    overflow-x:hidden;
-    position: relative;
+
+}
+
+/*animation*/
+.celeb {
+    padding: 0 0 0 25px;
+    position: absolute;
+    animation: shake-animation 2.72s ease infinite;
+    transform-origin: 50% 50%;
+    animation-duration: 3s;
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    1.78571% {
+        transform: translate(5px, 2px);
+        transform: rotate(10deg)
+    }
+
+    3.57143% {
+        transform: translate(0, 0);
+        transform: rotate(-10deg)
+    }
+
+    5.35714% {
+        transform: translate(5px, 2px);
+        transform: rotate(10deg)
+    }
+
+    7.14286% {
+        transform: translate(0, 0);
+        transform: rotate(-10deg)
+    }
+
+    8.92857% {
+        transform: translate(5px, 2px);
+        transform: rotate(10deg)
+    }
+
+    10.71429% {
+        transform: translate(0, 0);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
 }

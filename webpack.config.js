@@ -1,5 +1,6 @@
 const CaseSensitivePathsWebpackPlugin = require('case-sensitive-paths-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 module.exports = {
     entry: "./src/index.js",
@@ -16,12 +17,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-
-                    { loader: 'style-loader' },
-                    
-                    { loader: 'css-loader'}
-                ],
+                use: [ MiniCssExtractPlugin.loader,'css-loader'],
 
             },
             {
@@ -43,6 +39,7 @@ module.exports = {
           title: 'Production',
           template: './src/index.html',
         }),
+        new MiniCssExtractPlugin(),
         new CaseSensitivePathsWebpackPlugin(),
       ],
 }
