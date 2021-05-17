@@ -1,5 +1,5 @@
 .landing__container{
-    background-color: cadetblue;
+    background-color: black;
     height: 100vh;
 }
 .title__landing {
@@ -9,6 +9,24 @@
     align-items: center;
     
     
+}
+.num__count{
+    font-size: large;
+    font-weight: 800;
+    color:burlywood;
+    margin-left: 10px;
+}
+.btn__counter{
+    
+    position: absolute;
+    margin-left: 48% ;
+}
+button{
+    color: black;
+    border-radius: 5px;
+    border: 1px;
+    width: 100px;
+    height: 30px;
 }
 
 h1 {

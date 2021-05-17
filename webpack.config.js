@@ -1,6 +1,7 @@
 const CaseSensitivePathsWebpackPlugin = require('case-sensitive-paths-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const path = require('path');
 module.exports = {
     entry: "./src/index.js",
@@ -33,6 +34,7 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
+        hot:true,
       },
       plugins: [
         new HtmlWebpackPlugin({
@@ -41,5 +43,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin(),
         new CaseSensitivePathsWebpackPlugin(),
+        new ReactRefreshWebpackPlugin()
       ],
 }
