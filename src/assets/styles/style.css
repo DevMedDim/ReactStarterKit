@@ -1,27 +1,31 @@
-.landing__container{
+.landing__container {
     background-color: black;
     height: 100vh;
 }
+
 .title__landing {
     top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
-.num__count{
+
+.num__count {
     font-size: large;
     font-weight: 800;
-    color:burlywood;
+    color: burlywood;
     margin-left: 10px;
 }
-.btn__counter{
-    
+
+.btn__counter {
+
     position: absolute;
-    margin-left: 48% ;
+    margin-left: 48%;
 }
-button{
+
+button {
     color: black;
     border-radius: 5px;
     border: 1px;
